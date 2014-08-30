@@ -1,0 +1,52 @@
+myDemo
+========================================================
+author: Mete Ozguz
+date: 2014-08-24
+transition: rotate
+
+An App of Executed Offenders by
+    Texas Department of Criminal Justice 
+
+About Texas Department of Criminal Justice 
+========================================================
+
+<small>The Texas Department of Criminal Justice (TDCJ) manages offenders in state prisons, state jails and private correctional facilities that contract with TDCJ. The agency also provides funding and certain oversight of community supervision (previously known as adult probation) and is responsible for the supervision of offenders released from prison on parole or mandatory supervision.</small>
+
+Web Page: http://www.tdcj.state.tx.us
+
+Data: http://www.tdcj.state.tx.us/death_row/dr_executed_offenders.html
+
+About App (1/2)
+========================================================
+
+App has 6 tabs: 
+* Last Name
+* First Name
+* Age 
+* Year
+* Race
+* County
+
+
+About App (2/2)
+========================================================
+
+Each tab shows corresponding histogram.
+
+You can dynamicly change histograms on each tabs using Tuning pane on the left side
+
+There is boundary check for Age, but no input type check at all
+
+Encountering any error while tuning means that THERE IS NO SUCH DATA (empty sub set) [I'm unsuccessful updating inputText from server.R]
+
+Encountering any error while tuning: JUST SIMPLY DELETE OR UPDATE YOUR TUNING PARAMETER/S
+
+Thank You
+========================================================
+
+<small> ... with an ugly summary of the data </small>
+
+```{r}
+rawData <- read.csv("rData.csv")
+summary(rawData)
+```
